@@ -1,0 +1,56 @@
+:root{
+--main-color:chocolate;
+--secondary-color:peru;
+--tertiary-color: moccasin;
+--dark-color:#444;
+--light-color:#fafafa;
+}
+body{
+font-family: 'Montserrat', sans-serif;
+background-color: var(--light-color);
+color: var(--dark-color);
+display: flex;
+align-content: center;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+#contact-form {
+    background-image: linear-gradient(-45deg, var(--secondary-color), var(--tertiary-color), var(--secondary-color));
+    display: flex;
+    flex-direction: column;
+    border: var(--main-color) solid 3px;
+    border-radius: .5em;
+    padding: 1em 1em 2em;
+    width: 370px;
+}
+.title {
+    text-shadow: 1px 1px 10px var(--tertiary-color);
+    border-bottom: var(--main-color) 2px solid;
+    padding-bottom: .25em;
+    text-align: center;
+}
+input, textarea, button {
+    margin: .5em 0em;
+    border: var(--main-color) 2px solid;
+    border-radius: .5em;
+    padding: 0em 01em;
+    min-height: 30px;
+}
+.message {
+    padding: 1em;
+}
+#send-message {
+    padding: .5em 0em;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-shadow: 1px 1px 5px var(--main-color);
+    font-size: 16px;
+}
+#send-message:hover {
+    background-color: var(--tertiary-color);
+    color: var(--main-color);
+    text-shadow: 1px 1px 5px var(--light-color);
+    border: var(--secondary-color) 2px solid;
+    transition-duration: 500ms;
+}

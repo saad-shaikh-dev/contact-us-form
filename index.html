@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form id="contact-form" action="https://formsubmit.co/saad.test-email@protonmail.com" method="POST">
+        <h1 class="title">Contact us</h1>
+        <input type="hidden" name="_subject" value="Email from your website">
+        <input type="text" id="name" name="Sender's name" placeholder="Your name..." required>
+        <input type="email" id="email-id" name="Sender's email ID" placeholder="Your email ID..." required>
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/thank-you.html">
+        <textarea name="Sender's message" id="message" cols="30" rows="10" class="message" placeholder="Your message..." required></textarea>
+        <button type="submit" id="send-message">Send message</button>
+    </form>
+</body>
+</html>
